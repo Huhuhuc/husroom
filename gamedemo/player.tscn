@@ -317,7 +317,6 @@ tracks/5/keys = {
 [sub_resource type="Animation" id="Animation_lqcou"]
 resource_name = "landing"
 length = 0.2
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -556,6 +555,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_cu32u")
 
 [node name="Graphics" type="Node2D" parent="."]

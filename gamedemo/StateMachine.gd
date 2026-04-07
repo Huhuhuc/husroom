@@ -5,10 +5,12 @@ extends Node
 
 
 var _current_state: int = -1
+var state_time: float = 0.0
 var current_state: int = -1 :
 	set(v):
 		if _current_state != v:
 			owner.transition_state(_current_state, v)
+			state_time = 0.0
 		_current_state = v
 	get:
 		return _current_state
@@ -30,3 +32,4 @@ func _physics_process(delta: float) -> void:
 		current_state = next
 	
 	owner.tick_physics(current_state,delta)
+	state_time += delta

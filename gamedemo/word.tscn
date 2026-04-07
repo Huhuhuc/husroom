@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dcgc8hfyevkv5"]
+[gd_scene load_steps=10 format=3 uid="uid://dcgc8hfyevkv5"]
 
 [ext_resource type="Script" path="res://word.gd" id="1_tq3ar"]
 [ext_resource type="Texture2D" uid="uid://l8bxxxv2es1f" path="res://godot-2d-adventure-tutorial-assets/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="1_w181r"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ddy1qu0ceu7r8" path="res://godot-2d-adventure-tutorial-assets/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="4_bon0i"]
 [ext_resource type="Texture2D" uid="uid://cokam50ncrhu5" path="res://godot-2d-adventure-tutorial-assets/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Trees/Background3.png" id="5_ddldm"]
 [ext_resource type="Texture2D" uid="uid://bhdtitrqpct5e" path="res://godot-2d-adventure-tutorial-assets/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Trees/Background2.png" id="6_f76dt"]
+[ext_resource type="PackedScene" uid="uid://235ksdjo1uyu" path="res://enemies/boar.tscn" id="7_1l756"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ttwrt"]
 texture = ExtResource("1_w181r")
@@ -735,3 +736,6 @@ position = Vector2(267, 82)
 texture = ExtResource("1_w181r")
 region_enabled = true
 region_rect = Rect2(210, 293, 124, 86)
+
+[node name="Boar" parent="." instance=ExtResource("7_1l756")]
+position = Vector2(501, 155)
